@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" printOrder="Horizontal" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2ad7ceb5-95b5-4d46-94ed-bd35320de1ed">
+	<property name="ireport.zoom" value="1.2100000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from viviendas;]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="referencia" class="java.lang.String"/>
+	<field name="direccion" class="java.lang.String"/>
+	<field name="metros" class="java.lang.Integer"/>
+	<field name="habitaciones" class="java.lang.Integer"/>
+	<field name="banyos" class="java.lang.Integer"/>
+	<field name="precio" class="java.math.BigDecimal"/>
+	<field name="alquilada" class="java.lang.Boolean"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-18" y="-20" width="840" height="92" backcolor="#006699" uuid="96bd9025-6216-4e81-865a-3c9d5e13d0e1"/>
+				<staticText>
+					<reportElement x="20" y="20" width="272" height="43" forecolor="#FFFFFF" uuid="2d82cdbc-9dba-4c74-93c5-f2c76cc5a0ae"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[SmartOcupation]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="637" y="43" width="180" height="20" forecolor="#FFFFFF" uuid="1c537cb4-f48a-4292-96cf-2b40d4a50f58"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Listado de Viviendas]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="835" height="1" forecolor="#666666" uuid="54b9cdd0-bbb9-4c1b-9dae-8793463cb854"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="45" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="988833d5-16f2-4b18-9e6a-2db276b0cdc0"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nº]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="45" y="0" width="93" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="3e095a16-73b8-4806-8b7b-fa801fb401c7"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Referencia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="138" y="0" width="319" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="5b86f4c2-cc4b-456c-a5be-72e2cbf377db"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dirección]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="457" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="d1f22efa-26c0-41ea-95a1-92915aa2ac34"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Superficie]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="526" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="a95daf75-64c4-4e05-b78d-d48c954de2b8"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hab.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="595" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="46f5a996-62c9-4704-9489-329037afed45"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Baños]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="664" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="b64e4be6-8009-48b8-8d3c-fae075c265b0"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Precio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="733" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="917bde9a-6c31-45ec-b663-4a3fc18c9f69"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Alquilada]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="800" height="1" uuid="239a3542-5439-4608-a78e-e202f4c79fce"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="45" height="20" uuid="8e7b1452-787f-4df6-9f77-2c129b186b08"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="45" y="0" width="93" height="20" uuid="4259b9aa-bed4-40e0-bc53-9b522728b183"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{referencia}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="138" y="0" width="319" height="20" uuid="37449d6d-f2c6-415a-ad82-a8964681fc4f"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="457" y="0" width="69" height="20" uuid="2c5d6101-e82b-4efa-84ec-4abc0df2745c"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{metros}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="526" y="0" width="69" height="20" uuid="1fdacdb8-b42b-4042-9267-3777f21ad280"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{habitaciones}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="733" y="0" width="69" height="20" uuid="7a985f3c-bdbc-41ea-aaf2-9e5e4da766f7"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alquilada}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="595" y="0" width="69" height="20" uuid="30d8524a-c783-4263-971a-abb31a19b4f8"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{banyos}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="664" y="0" width="69" height="20" uuid="7f9ec038-b34e-4f13-8392-8c9310571971"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{precio}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="2" y="4" width="800" height="13" backcolor="#E6E6E6" uuid="db7ed0a1-2371-4693-af48-878d3d4dddec"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="1cdc79eb-ab86-43f1-ba5a-ec47ec37903f"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="5a9e9c46-b984-40a0-96d4-819e84376299"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
